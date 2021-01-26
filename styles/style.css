@@ -66,10 +66,17 @@ body.noscroll {
 .container {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: top -700px left -769px, bottom -700px right -769px;
+  /* this positions the second image */
+  background-repeat: no-repeat;
+  /* this applies to both images */
 }
 
 .card {
-  max-width: 50%;
+  z-index: 3;
   width: 326px;
   height: 374px;
   background-color: white;
@@ -87,8 +94,7 @@ body.noscroll {
   border-radius: 50%;
   border: 5px solid white;
   position: absolute;
-  position: absolute;
-  top: 210px;
+  top: 180px;
   z-index: 2;
 }
 

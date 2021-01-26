@@ -1,5 +1,6 @@
 .card {
-  max-width: 50%;
+  // max-width: 50%;
+  z-index: 3;
   width: 326px;
   height: 374px;
   background-color: white;
@@ -14,8 +15,7 @@
     border-radius: 50%;
     border: 5px solid white;
     position: absolute;
-    position: absolute;
-    top: 210px;
+    top: 180px;
     z-index: 2;
   }
   &__info {

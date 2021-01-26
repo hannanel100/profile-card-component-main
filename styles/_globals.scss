@@ -45,4 +45,11 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: top -700px left -769px,
+    /* this positions the first image */ bottom -700px right -769px; /* this positions the second image */
+  background-repeat: no-repeat; /* this applies to both images */
 }
