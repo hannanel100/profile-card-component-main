@@ -29,11 +29,11 @@ body {
   &-jc-sb {
     justify-content: space-between;
   }
+  &-jc-sa {
+    justify-content: space-around;
+  }
   &-jc-c {
     justify-content: center;
-  }
-  &-jc-sb {
-    justify-content: space-between;
   }
   &-ai-c {
     align-items: center;
@@ -49,7 +49,7 @@ body {
   z-index: 1;
   background-image: url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
-  background-position: top -700px left -769px,
-    /* this positions the first image */ bottom -700px right -769px; /* this positions the second image */
+  background-position: top -600px left -769px,
+    /* this positions the first image */ bottom -600px right -769px; /* this positions the second image */
   background-repeat: no-repeat; /* this applies to both images */
 }

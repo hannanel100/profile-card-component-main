@@ -38,16 +38,15 @@ body.noscroll {
           justify-content: space-between;
 }
 
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .flex-jc-c {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.flex-jc-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .flex-ai-c {
@@ -69,13 +68,14 @@ body.noscroll {
   position: relative;
   z-index: 1;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: top -700px left -769px, bottom -700px right -769px;
+  background-position: top -600px left -769px, bottom -600px right -769px;
   /* this positions the second image */
   background-repeat: no-repeat;
   /* this applies to both images */
 }
 
 .card {
+  position: relative;
   z-index: 3;
   width: 326px;
   height: 374px;
@@ -94,29 +94,43 @@ body.noscroll {
   border-radius: 50%;
   border: 5px solid white;
   position: absolute;
-  top: 180px;
+  top: 90px;
   z-index: 2;
 }
 
 .card__info {
-  margin-top: 65px;
+  margin-top: 70px;
 }
 
 .card__info__name {
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .card__info__age {
+  color: #969696;
   font-weight: 400;
 }
 
 .card__info__city {
-  font-weight: 400;
   margin: 0;
   font-size: 0.75rem;
+  color: #969696;
 }
 
-.stat__count {
+.card__stats {
+  margin-top: 25px;
+  padding: 25px;
+  width: 100%;
+  border-top: 1px solid #969696;
+}
+
+.card__stats .stat__count {
   font-weight: 700;
+}
+
+.card__stats .stat__type {
+  color: #969696;
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 .card {
   // max-width: 50%;
+  position: relative;
   z-index: 3;
   width: 326px;
   height: 374px;
@@ -15,25 +16,38 @@
     border-radius: 50%;
     border: 5px solid white;
     position: absolute;
-    top: 180px;
+    top: 90px;
     z-index: 2;
   }
   &__info {
-    margin-top: 65px;
+    margin-top: 70px;
     &__name {
       margin-bottom: 5px;
+      font-weight: $bold;
     }
     &__age {
+      color: $darkGray;
       font-weight: 400;
     }
     &__city {
-      font-weight: 400;
       margin: 0;
       font-size: $font-md;
+      color: $darkGray;
     }
   }
-}
-
-.stat__count {
-  font-weight: $bold;
+  &__stats {
+    margin-top: 25px;
+    padding: 25px;
+    width: 100%;
+    border-top: 1px solid $darkGray;
+    .stat {
+      &__count {
+        font-weight: $bold;
+      }
+      &__type {
+        color: $darkGray;
+        font-size: $font-md;
+      }
+    }
+  }
 }
