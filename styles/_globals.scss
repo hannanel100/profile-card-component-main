@@ -45,6 +45,7 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
+
   position: relative;
   z-index: 1;
   background-image: url(../images/bg-pattern-top.svg),
@@ -52,4 +53,7 @@ body {
   background-position: top -600px left -769px,
     /* this positions the first image */ bottom -600px right -769px; /* this positions the second image */
   background-repeat: no-repeat; /* this applies to both images */
+  @media (min-width: $desktop) {
+    top -500px left -470px, bottom -655px right -379px
+  }
 }

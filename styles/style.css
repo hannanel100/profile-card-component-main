@@ -74,6 +74,13 @@ body.noscroll {
   /* this applies to both images */
 }
 
+@media (min-width: 1080px) {
+  .container {
+    background-position: top 0px left 0px, bottom 0px right 0px;
+    /* this positions the second image */
+  }
+}
+
 .card {
   position: relative;
   z-index: 3;
@@ -81,6 +88,8 @@ body.noscroll {
   height: 374px;
   background-color: white;
   border-radius: 10px;
+  -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
 
 .card__header {
